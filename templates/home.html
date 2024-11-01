@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Fraud Data</title>
+</head>
+<body>
+    <h1>Credit Card Fraud Data</h1>
+    <tableborder="1">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Transaction Date</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Is Fraud</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in table %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

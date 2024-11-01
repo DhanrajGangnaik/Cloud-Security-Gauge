@@ -1,0 +1,4 @@
+Flask==2.1.0
+cx_Oracle==8.3.0
+pandas
+Werkzeug==2.0.3  # Downgrade Werkzeug to a compatible version
